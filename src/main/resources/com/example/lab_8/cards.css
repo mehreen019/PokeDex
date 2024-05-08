@@ -17,6 +17,16 @@
     -fx-background-radius: 20;
 }
 
+.electricbg{
+    -fx-background-color:   #F7A35B;
+    -fx-background-radius: 20;
+}
+
+.fairybg{
+    -fx-background-color:    #F076A0;
+    -fx-background-radius: 20;
+}
+
 .grassname{
     -fx-background-color: #c5eaab;
     -fx-font-family: Verdana;
@@ -48,5 +58,27 @@
 
 .firetype{
     -fx-background-color:  #FABCB8; -fx-font-family: Verdana; -fx-background-radius: 20; -fx-alignment: center;
+}
+
+.electricname{
+    -fx-background-color:   #F6D686;
+    -fx-font-family: Verdana;
+    -fx-background-radius: 10;
+    -fx-alignment: center;
+}
+
+.electrictype{
+    -fx-background-color:   #F8EDB8; -fx-font-family: Verdana; -fx-background-radius: 20; -fx-alignment: center;
+}
+
+.fairyname{
+    -fx-background-color:    #F4B2C8;
+    -fx-font-family: Verdana;
+    -fx-background-radius: 10;
+    -fx-alignment: center;
+}
+
+.fairytype{
+    -fx-background-color:    #FCE4EC; -fx-font-family: Verdana; -fx-background-radius: 20; -fx-alignment: center;
 }
 

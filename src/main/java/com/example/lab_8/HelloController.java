@@ -98,6 +98,9 @@ public class HelloController {
                 if (Objects.equals(pok.getType1(), "grass")) newpane.getStyleClass().add("grassbg");
                 else if (Objects.equals(pok.getType1(), "water")) newpane.getStyleClass().add("waterbg");
                 else if (Objects.equals(pok.getType1(), "fire")) newpane.getStyleClass().add("firebg");
+                else if (Objects.equals(pok.getType1(), "electric")) newpane.getStyleClass().add("electricbg");
+                else if (Objects.equals(pok.getType1(), "fairy")) newpane.getStyleClass().add("fairybg");
+
 
                 //ImageView img = new ImageView(imgurl+"Bulbasaur"+".jpg")
                 Image im = new Image(getClass().getResource("images/" + pok.pokeid + ".png").toExternalForm());
@@ -110,6 +113,18 @@ public class HelloController {
                 img.setLayoutY(6.0);
                 img.setPreserveRatio(true);
                 img.setPickOnBounds(true);
+
+                im = new Image(getClass().getResource("images/pok.png").toExternalForm());
+
+                ImageView img2 = new ImageView(im);
+                //img.setImage(im);
+                img2.setFitHeight(130.0);
+                img2.setFitWidth(122.0);
+                img2.setLayoutX(152.0);
+                img2.setLayoutY(26.0);
+                img2.setOpacity(0.25);
+                img2.setPreserveRatio(true);
+                img2.setPickOnBounds(true);
 
 
                 Label lbid = new Label();
@@ -133,6 +148,8 @@ public class HelloController {
                 if (Objects.equals(pok.getType1(), "grass")) lbname.getStyleClass().add("grassname");
                 else if (Objects.equals(pok.getType1(), "water")) lbname.getStyleClass().add("watername");
                 else if (Objects.equals(pok.getType1(), "fire")) lbname.getStyleClass().add("firename");
+                else if (Objects.equals(pok.getType1(), "electric")) lbname.getStyleClass().add("electricname");
+                else if (Objects.equals(pok.getType1(), "fairy")) lbname.getStyleClass().add("fairyname");
 
                 Label lbtype = new Label();
                 lbtype.setText(pok.type1);
@@ -144,6 +161,8 @@ public class HelloController {
                 if (Objects.equals(pok.getType1(), "grass")) lbtype.getStyleClass().add("grasstype");
                 else if (Objects.equals(pok.getType1(), "water")) lbtype.getStyleClass().add("watertype");
                 else if (Objects.equals(pok.getType1(), "fire")) lbtype.getStyleClass().add("firetype");
+                else if (Objects.equals(pok.getType1(), "electric")) lbtype.getStyleClass().add("electrictype");
+                else if (Objects.equals(pok.getType1(), "fairy")) lbtype.getStyleClass().add("fairytype");
 
                 Button btn = new Button();
                 btn.setText("Details");
@@ -165,11 +184,14 @@ public class HelloController {
                     }
                 });
 
-                newpane.getChildren().add(img);
+
                 newpane.getChildren().add(lbname);
                 newpane.getChildren().add(lbtype);
                 newpane.getChildren().add(lbid);
                 newpane.getChildren().add(btn);
+                newpane.getChildren().add(img2);
+                newpane.getChildren().add(img);
+
 
 
                 gd.add(newpane, col, row);
@@ -198,8 +220,11 @@ public class HelloController {
                 if (Objects.equals(pok.getType1(), "grass")) {
                     root.setStyle("-fx-background-color: #38776F;");
                     System.out.println("ok");
-                } else if (Objects.equals(pok.getType1(), "water")) root.setStyle("-fx-background-color: #3B8CCE;");
+                }
+                else if (Objects.equals(pok.getType1(), "water")) root.setStyle("-fx-background-color: #3B8CCE;");
                 else if (Objects.equals(pok.getType1(), "fire")) root.setStyle("-fx-background-color: #CE3E3E;");
+                else if (Objects.equals(pok.getType1(), "electric")) root.setStyle("-fx-background-color: #F7A35B;");
+                else if (Objects.equals(pok.getType1(), "fairy")) root.setStyle("-fx-background-color:  #F076A0;");
             }
         }
 
@@ -237,6 +262,8 @@ public class HelloController {
             if(Objects.equals(pok.getType1(), "grass")) newpane.getStyleClass().add("grassbg");
             else if(Objects.equals(pok.getType1(), "water")) newpane.getStyleClass().add("waterbg");
             else if(Objects.equals(pok.getType1(), "fire")) newpane.getStyleClass().add("firebg");
+            else if (Objects.equals(pok.getType1(), "electric")) newpane.getStyleClass().add("electricbg");
+            else if (Objects.equals(pok.getType1(), "fairy")) newpane.getStyleClass().add("fairybg");
 
             //ImageView img = new ImageView(imgurl+"Bulbasaur"+".jpg")
             Image im = new Image(getClass().getResource("images/" + pok.pokeid + ".png").toExternalForm());
@@ -249,6 +276,18 @@ public class HelloController {
             img.setLayoutY(6.0);
             img.setPreserveRatio(true);
             img.setPickOnBounds(true);
+
+            im = new Image(getClass().getResource("images/pok.png").toExternalForm());
+
+            ImageView img2 = new ImageView(im);
+            //img.setImage(im);
+            img2.setFitHeight(130.0);
+            img2.setFitWidth(122.0);
+            img2.setLayoutX(152.0);
+            img2.setLayoutY(26.0);
+            img2.setOpacity(0.25);
+            img2.setPreserveRatio(true);
+            img2.setPickOnBounds(true);
 
 
             Label lbid = new Label();
@@ -272,6 +311,8 @@ public class HelloController {
             if(Objects.equals(pok.getType1(), "grass")) lbname.getStyleClass().add("grassname");
             else if(Objects.equals(pok.getType1(), "water")) lbname.getStyleClass().add("watername");
             else if(Objects.equals(pok.getType1(), "fire")) lbname.getStyleClass().add("firename");
+            else if (Objects.equals(pok.getType1(), "electric")) lbname.getStyleClass().add("electricname");
+            else if (Objects.equals(pok.getType1(), "fairy")) lbname.getStyleClass().add("fairyname");
 
             Label lbtype = new Label();
             lbtype.setText(pok.type1);
@@ -283,6 +324,8 @@ public class HelloController {
             if(Objects.equals(pok.getType1(), "grass")) lbtype.getStyleClass().add("grasstype");
             else if(Objects.equals(pok.getType1(), "water")) lbtype.getStyleClass().add("watertype");
             else if(Objects.equals(pok.getType1(), "fire")) lbtype.getStyleClass().add("firetype");
+            else if (Objects.equals(pok.getType1(), "electric")) lbtype.getStyleClass().add("electrictype");
+            else if (Objects.equals(pok.getType1(), "fairy")) lbtype.getStyleClass().add("fairytype");
 
             Button btn = new Button();
             btn.setText("Details");
@@ -304,11 +347,13 @@ public class HelloController {
                 }
             });
 
-            newpane.getChildren().add(img);
+
             newpane.getChildren().add(lbname);
             newpane.getChildren().add(lbtype);
             newpane.getChildren().add(lbid);
             newpane.getChildren().add(btn);
+            newpane.getChildren().add(img2);
+            newpane.getChildren().add(img);
 
 
             gd.add(newpane, col, row);
@@ -342,6 +387,8 @@ public class HelloController {
             if(Objects.equals(pok.getType1(), "grass")) newpane.getStyleClass().add("grassbg");
             else if(Objects.equals(pok.getType1(), "water")) newpane.getStyleClass().add("waterbg");
             else if(Objects.equals(pok.getType1(), "fire")) newpane.getStyleClass().add("firebg");
+            else if (Objects.equals(pok.getType1(), "electric")) newpane.getStyleClass().add("electricbg");
+            else if (Objects.equals(pok.getType1(), "fairy")) newpane.getStyleClass().add("fairybg");
 
             //ImageView img = new ImageView(imgurl+"Bulbasaur"+".jpg")
             Image im = new Image(getClass().getResource("images/" + pok.pokeid + ".png").toExternalForm());
@@ -354,6 +401,18 @@ public class HelloController {
             img.setLayoutY(6.0);
             img.setPreserveRatio(true);
             img.setPickOnBounds(true);
+
+            im = new Image(getClass().getResource("images/pok.png").toExternalForm());
+
+            ImageView img2 = new ImageView(im);
+            //img.setImage(im);
+            img2.setFitHeight(130.0);
+            img2.setFitWidth(122.0);
+            img2.setLayoutX(152.0);
+            img2.setLayoutY(26.0);
+            img2.setOpacity(0.25);
+            img2.setPreserveRatio(true);
+            img2.setPickOnBounds(true);
 
 
             Label lbid = new Label();
@@ -377,6 +436,8 @@ public class HelloController {
             if(Objects.equals(pok.getType1(), "grass")) lbname.getStyleClass().add("grassname");
             else if(Objects.equals(pok.getType1(), "water")) lbname.getStyleClass().add("watername");
             else if(Objects.equals(pok.getType1(), "fire")) lbname.getStyleClass().add("firename");
+            else if (Objects.equals(pok.getType1(), "electric")) lbname.getStyleClass().add("electricname");
+            else if (Objects.equals(pok.getType1(), "fairy")) lbname.getStyleClass().add("fairyname");
 
             Label lbtype = new Label();
             lbtype.setText(pok.type1);
@@ -388,6 +449,8 @@ public class HelloController {
             if(Objects.equals(pok.getType1(), "grass")) lbtype.getStyleClass().add("grasstype");
             else if(Objects.equals(pok.getType1(), "water")) lbtype.getStyleClass().add("watertype");
             else if(Objects.equals(pok.getType1(), "fire")) lbtype.getStyleClass().add("firetype");
+            else if (Objects.equals(pok.getType1(), "electric")) lbtype.getStyleClass().add("electrictype");
+            else if (Objects.equals(pok.getType1(), "fairy")) lbtype.getStyleClass().add("fairytype");
 
             Button btn = new Button();
             btn.setText("Details");
@@ -409,11 +472,13 @@ public class HelloController {
                 }
             });
 
-            newpane.getChildren().add(img);
+
             newpane.getChildren().add(lbname);
             newpane.getChildren().add(lbtype);
             newpane.getChildren().add(lbid);
             newpane.getChildren().add(btn);
+            newpane.getChildren().add(img2);
+            newpane.getChildren().add(img);
 
 
             gd.add(newpane, col, row);

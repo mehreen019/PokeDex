@@ -75,6 +75,16 @@ public class DetailsController {
     @FXML
     public Pane p4;
 
+    @FXML
+    public ImageView tog1;
+
+    @FXML
+    public ImageView tog2;
+
+    @FXML
+    public ImageView tog3;
+
+
     Boolean faved;
 
     public DetailsController(){
@@ -125,6 +135,17 @@ public class DetailsController {
             if(pok.getName().equals(name)){
                 this.thisPoke= pok;
 
+                if(name.equals("togepi")){
+                    tog1.setVisible(true);
+                    tog2.setVisible(true);
+                    tog3.setVisible(true);
+                }
+                else{
+                    tog1.setVisible(false);
+                    tog2.setVisible(false);
+                    tog3.setVisible(false);
+                }
+
                 if(Objects.equals(pok.getType1(), "grass")){
                     this.p1.setStyle("-fx-background-color:  #B2D0CD; -fx-background-radius: 20;");
                     this.p2.setStyle("-fx-background-color:  #B2D0CD; -fx-background-radius: 20;");
@@ -143,7 +164,20 @@ public class DetailsController {
                     this.p2.setStyle("-fx-background-color:  #FABCB8; -fx-background-radius: 20;");
                     this.p3.setStyle("-fx-background-color:  #FABCB8; -fx-background-radius: 20;");
                     this.p4.setStyle("-fx-background-color:  #FABCB8; -fx-background-radius: 20;");
-
+                }
+                else if(Objects.equals(pok.getType1(), "electric")){
+                    System.out.println("reached");
+                    this.p1.setStyle("-fx-background-color:  #F8EDB8; -fx-background-radius: 20;");
+                    this.p2.setStyle("-fx-background-color:  #F8EDB8; -fx-background-radius: 20;");
+                    this.p3.setStyle("-fx-background-color:  #F8EDB8; -fx-background-radius: 20;");
+                    this.p4.setStyle("-fx-background-color:  #F8EDB8; -fx-background-radius: 20;");
+                }
+                else if(Objects.equals(pok.getType1(), "fairy")){
+                    System.out.println("reached");
+                    this.p1.setStyle("-fx-background-color:   #FCE4EC; -fx-background-radius: 20;");
+                    this.p2.setStyle("-fx-background-color:   #FCE4EC; -fx-background-radius: 20;");
+                    this.p3.setStyle("-fx-background-color:   #FCE4EC; -fx-background-radius: 20;");
+                    this.p4.setStyle("-fx-background-color:   #FCE4EC; -fx-background-radius: 20;");
                 }
 
                 Image im = new Image(getClass().getResource("images/" + pok.pokeid + ".png").toExternalForm());

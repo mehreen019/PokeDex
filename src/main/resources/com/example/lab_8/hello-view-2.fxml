@@ -11,12 +11,12 @@
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="669.0" prefWidth="1094.0" style="-fx-background-color: #3B8CCE;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab_8.DetailsController">
       <ImageView fitHeight="587.0" fitWidth="952.0" layoutX="272.0" layoutY="42.0" opacity="0.33" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@images/okeball-graphic-by-maratuna-on-deviantart-banner-free-pokeball-icon-white-11563088134kq9ws2c2kv-removebg-preview.png" />
+            <Image url="@images/pok.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="pokepic" fitHeight="483.0" fitWidth="480.0" layoutX="32.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="pokepic" fitHeight="483.0" fitWidth="480.0" layoutX="32.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@images/0007.png" />
+            <Image url="@images/0175.png" />
          </image>
       </ImageView>
       <Label id="nameMain" fx:id="nameMain" layoutX="547.0" layoutY="30.0" pickOnBounds="false" prefHeight="86.0" prefWidth="389.0" style="-fx-alignment: CENTER;" text="SQUIRTLE" textFill="WHITE">
@@ -53,7 +53,7 @@
             </Label>
          </children>
       </Pane>
-      <Pane fx:id="p3" layoutX="815.0" layoutY="264.0" pickOnBounds="false" prefHeight="142.0" prefWidth="218.0" style="-fx-background-color: #93C7F0; -fx-background-radius: 20;">
+      <Pane fx:id="p3" layoutX="791.0" layoutY="264.0" pickOnBounds="false" prefHeight="142.0" prefWidth="242.0" style="-fx-background-color: #93C7F0; -fx-background-radius: 20;">
          <children>
             <Label layoutX="8.0" layoutY="21.0" prefHeight="36.0" prefWidth="79.0" text="HEIGHT:">
                <font>
@@ -132,4 +132,19 @@
       </Pane>
       <Button fx:id="heart" layoutX="937.0" layoutY="48.0" mnemonicParsing="false" onAction="#Hearting" prefHeight="49.0" prefWidth="54.0" style="-fx-shape: &quot;M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z&quot;; -fx-background-color: #ffffff;" />
       <Button layoutX="32.0" layoutY="29.0" mnemonicParsing="false" onAction="#switchToDash" prefHeight="36.0" prefWidth="72.0" text="Back" />
+   <ImageView fx:id="tog1" fitHeight="71.0" fitWidth="79.0" layoutX="49.0" layoutY="562.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@images/0175-5.gif" />
+      </image>
+   </ImageView>
+   <ImageView fx:id="tog2" fitHeight="71.0" fitWidth="79.0" layoutX="237.0" layoutY="562.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@images/0175-4.gif" />
+      </image>
+   </ImageView>
+   <ImageView fx:id="tog3" fitHeight="71.0" fitWidth="79.0" layoutX="441.0" layoutY="562.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@images/0175-6.gif" />
+      </image>
+   </ImageView>
 </AnchorPane>
