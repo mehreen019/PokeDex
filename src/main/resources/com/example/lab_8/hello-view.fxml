@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="669.0" prefWidth="1094.0" style="-fx-background-color: #DEE0EB;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab_8.HelloController">
+      <Label fx:id="mainn" layoutX="14.0" layoutY="6.0" prefHeight="53.0" prefWidth="494.0" style="-fx-font-family: Verdana;" text="POKEDEX">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Label>
+   <GridPane fx:id="gd" layoutX="86.0" layoutY="72.8" prefHeight="550.0" prefWidth="908.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="73.0">
+     <columnConstraints>
+       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+     </columnConstraints>
+     <rowConstraints>
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+     </rowConstraints>
+      <children>
+         <Pane prefHeight="157.0" prefWidth="227.0" style="-fx-background-color: #CE3E3E; -fx-background-radius: 20;">
+               <ImageView fitHeight="138.0" fitWidth="158.0" layoutX="118.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@images/0004.png" />
+                  </image>
+               </ImageView>
+               <Label layoutX="14.0" layoutY="39.0" prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #F37C73; -fx-font-family: Verdana; -fx-background-radius: 10; -fx-alignment: center;" text="CHARMANDER" />
+               <Label layoutX="14.0" layoutY="75.0" prefHeight="26.0" prefWidth="84.0" style="-fx-background-color: #FABCB8; -fx-font-family: Verdana; -fx-background-radius: 20; -fx-alignment: center;" text="Grass" />
+            <Label layoutX="14.0" layoutY="6.0" opacity="0.47" prefHeight="25.0" prefWidth="84.0" style="-fx-font-family: Verdana; -fx-background-color: 00000;" text="0001" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Button layoutX="14.0" layoutY="111.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" style="-fx-background-radius: 10;" text="Details" />
+         </Pane>
+
+      </children>
+   </GridPane>
+   <Button layoutX="783.0" layoutY="21.0" mnemonicParsing="false" onAction="#populateFav" prefHeight="26.0" prefWidth="94.0" text="FAVORITES" />
+   <ImageView fitHeight="54.0" fitWidth="52.0" layoutX="213.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@images/18316-200.png" />
+      </image>
+   </ImageView>
+   <Button layoutX="668.0" layoutY="21.0" mnemonicParsing="false" onAction="#populateGrid" prefHeight="26.0" prefWidth="94.0" text="DASHBOARD" />
+   <TextField fx:id="searchbar" layoutX="902.0" layoutY="22.0" />
+   <Button fx:id="searchbtn" layoutX="1052.0" layoutY="21.0" mnemonicParsing="false" onAction="#populateBySearch" prefHeight="25.0" prefWidth="22.0">
+      <graphic>
+         <ImageView fitHeight="20.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@images/search.png" />
+            </image>
+         </ImageView>
+      </graphic>
+   </Button>
+</AnchorPane>

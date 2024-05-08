@@ -1,0 +1,52 @@
+:root{
+    --grassbg: #38776F;
+}
+
+.grassbg{
+    -fx-background-color: #38776F;
+    -fx-background-radius: 20;
+}
+
+.waterbg{
+    -fx-background-color: #3B8CCE;
+    -fx-background-radius: 20;
+}
+
+.firebg{
+    -fx-background-color:  #CE3E3E;
+    -fx-background-radius: 20;
+}
+
+.grassname{
+    -fx-background-color: #c5eaab;
+    -fx-font-family: Verdana;
+    -fx-background-radius: 10;
+    -fx-alignment: center;
+}
+
+.grasstype{
+    -fx-background-color: #B2D0CD; -fx-font-family: Verdana; -fx-background-radius: 20; -fx-alignment: center;
+}
+
+.watername{
+    -fx-background-color: #93C7F0;
+    -fx-font-family: Verdana;
+    -fx-background-radius: 10;
+    -fx-alignment: center;
+}
+
+.watertype{
+    -fx-background-color: #C2D6E7; -fx-font-family: Verdana; -fx-background-radius: 20; -fx-alignment: center;
+}
+
+.firename{
+    -fx-background-color:  #F37C73;
+    -fx-font-family: Verdana;
+    -fx-background-radius: 10;
+    -fx-alignment: center;
+}
+
+.firetype{
+    -fx-background-color:  #FABCB8; -fx-font-family: Verdana; -fx-background-radius: 20; -fx-alignment: center;
+}
+

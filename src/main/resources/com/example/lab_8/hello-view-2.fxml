@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="669.0" prefWidth="1094.0" style="-fx-background-color: #3B8CCE;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab_8.DetailsController">
+      <ImageView fitHeight="587.0" fitWidth="952.0" layoutX="272.0" layoutY="42.0" opacity="0.33" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/okeball-graphic-by-maratuna-on-deviantart-banner-free-pokeball-icon-white-11563088134kq9ws2c2kv-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pokepic" fitHeight="483.0" fitWidth="480.0" layoutX="32.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/0007.png" />
+         </image>
+      </ImageView>
+      <Label id="nameMain" fx:id="nameMain" layoutX="547.0" layoutY="30.0" pickOnBounds="false" prefHeight="86.0" prefWidth="389.0" style="-fx-alignment: CENTER;" text="SQUIRTLE" textFill="WHITE">
+         <font>
+            <Font size="58.0" />
+         </font>
+      </Label>
+      <Pane fx:id="p2" layoutX="547.0" layoutY="265.0" pickOnBounds="false" prefHeight="141.0" prefWidth="224.0" style="-fx-background-color: #93C7F0; -fx-background-radius: 20;">
+         <children>
+            <Label layoutX="25.0" layoutY="63.0" prefHeight="36.0" prefWidth="72.0" text="TYPE:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="27.0" prefHeight="36.0" prefWidth="72.0" text="ID:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="id" layoutX="119.0" layoutY="27.0" prefHeight="36.0" prefWidth="72.0" text="0007">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="type1" layoutX="97.0" layoutY="63.0" prefHeight="36.0" prefWidth="105.0" style="-fx-alignment: center;" text="WATER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="type2" layoutX="97.0" layoutY="92.0" prefHeight="36.0" prefWidth="105.0" style="-fx-alignment: center;" text="POISON">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="p3" layoutX="815.0" layoutY="264.0" pickOnBounds="false" prefHeight="142.0" prefWidth="218.0" style="-fx-background-color: #93C7F0; -fx-background-radius: 20;">
+         <children>
+            <Label layoutX="8.0" layoutY="21.0" prefHeight="36.0" prefWidth="79.0" text="HEIGHT:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="8.0" layoutY="53.0" prefHeight="36.0" prefWidth="79.0" text="WEIGHT:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         <Label fx:id="height" layoutX="94.0" layoutY="21.0" prefHeight="36.0" prefWidth="122.0" text="1.6 m (5′03″)">
+            <font>
+               <Font size="20.0" />
+            </font>
+         </Label>
+         <Label fx:id="weight" layoutX="94.0" layoutY="56.0" prefHeight="24.0" prefWidth="122.0" text="85.5 kg" wrapText="true">
+            <font>
+               <Font size="20.0" />
+            </font>
+         </Label>
+         <Label layoutX="7.0" layoutY="86.0" prefHeight="36.0" prefWidth="112.0" text="CATEGORY:">
+            <font>
+               <Font size="20.0" />
+            </font>
+         </Label>
+         <Label fx:id="cat" layoutX="119.0" layoutY="89.0" prefHeight="30.0" prefWidth="122.0" text="85.5 kg" wrapText="true">
+            <font>
+               <Font size="20.0" />
+            </font>
+         </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="p4" layoutX="543.0" layoutY="433.0" pickOnBounds="false" prefHeight="200.0" prefWidth="490.0" style="-fx-background-color: #93C7F0; -fx-background-radius: 20;">
+         <children>
+            <Label layoutX="188.0" layoutY="14.0" prefHeight="36.0" prefWidth="114.0" text="EVOLUTION">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="ev1" fitHeight="112.0" fitWidth="126.0" layoutX="20.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/0007.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ev2" fitHeight="112.0" fitWidth="126.0" layoutX="182.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/0008.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ev3" fitHeight="112.0" fitWidth="126.0" layoutX="349.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/0009.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="78.0" fitWidth="54.0" layoutX="128.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/360_F_632966537_f70WQ5jo135R4Ha2DkwKUUW2ekTzCXAh-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="78.0" fitWidth="54.0" layoutX="302.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/360_F_632966537_f70WQ5jo135R4Ha2DkwKUUW2ekTzCXAh-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="p1" layoutX="543.0" layoutY="147.0" pickOnBounds="false" prefHeight="97.0" prefWidth="490.0" style="-fx-background-color: #93C7F0; -fx-background-radius: 20;">
+      <children>
+         <Label fx:id="desc" layoutX="14.0" layoutY="14.0" prefHeight="71.0" prefWidth="458.0" style="-fx-alignment: center;" text="Label noufbqbfj siudfkuiige iwbeihwiuu iuqwgeiuiuw qubtbiku iqubeiubwiub wieubtiw wiuhteiwgeiu" wrapText="true">
+            <font>
+               <Font size="13.0" />
+            </font>
+         </Label>
+      </children>
+      </Pane>
+      <Button fx:id="heart" layoutX="937.0" layoutY="48.0" mnemonicParsing="false" onAction="#Hearting" prefHeight="49.0" prefWidth="54.0" style="-fx-shape: &quot;M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z&quot;; -fx-background-color: #ffffff;" />
+      <Button layoutX="32.0" layoutY="29.0" mnemonicParsing="false" onAction="#switchToDash" prefHeight="36.0" prefWidth="72.0" text="Back" />
+</AnchorPane>
